@@ -2,7 +2,7 @@
 
 This is designed to be used for development purposes ONLY, allowing you to create and manage self-signed certificates easily. It uses a Caddy server Docker container with a self-signed CA certificate, so there is no magic.
 
-The idea is simple: a reverse proxy that serves your sites over HTTPS using a self-signed certificate. This way, you can test your sites in a secure environment without the need for a public domain or an externally issued SSL certificate.
+The idea is simple: a reverse proxy that serves your sites over HTTPS using a self-signed certificate. This way, you can test your sites in a secure environment without the need for a public domain or an externally issued certificate.
 
 ```mermaid
 flowchart LR
