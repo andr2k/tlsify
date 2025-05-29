@@ -1,0 +1,12 @@
+services:
+    caddy:
+        image: caddy:2.9.1
+        container_name: caddy
+        ports:
+        - "443:443"
+        - "443:443/udp"
+        volumes:
+        - ./Caddyfile:/etc/caddy/Caddyfile
+        - ./public:/var/www/html/public
+        - ./caddy_data:/data               # <-- add this
+        - ./caddy_config:/config           # <-- optional, stores JSON config

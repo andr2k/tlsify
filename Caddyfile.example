@@ -1,0 +1,12 @@
+{
+    acme_ca https://local.caddy.internal/acme/local/directory
+}
+
+http:// {
+    redir https://{host}{uri}
+}
+
+site.dev.local {
+    tls internal
+    reverse_proxy host.docker.internal:81
+}
