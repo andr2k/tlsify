@@ -42,7 +42,7 @@ flowchart LR
 
 # Prerequisites
 - Docker and Docker Compose installed on your machine
-- A web server available on your host machine that you want to serve over HTTPS (e.g., Apache, Nginx, etc.)
+- An HTTP web server available from your host machine that you want to serve over HTTPS
 - A domain name or a local hostname that you can use to access your sites (e.g., `site.dev.local` in your hosts file)
 
 # Preparation Steps
