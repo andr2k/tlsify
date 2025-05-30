@@ -1,12 +1,10 @@
 services:
-    caddy:
-        image: caddy:2.9.1
-        container_name: caddy
+    tlsify:
+        image: caddy:2.10.0-alpine
+        container_name: tlsify
         ports:
         - "443:443"
         - "443:443/udp"
         volumes:
         - ./Caddyfile:/etc/caddy/Caddyfile
-        - ./public:/var/www/html/public
-        - ./caddy_data:/data               # <-- add this
-        - ./caddy_config:/config           # <-- optional, stores JSON config
+        - ./caddy_data:/data
