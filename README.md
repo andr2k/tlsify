@@ -35,8 +35,8 @@ flowchart LR
     end
     
     style CaddyDocker fill:#b3e0ff,stroke:#1a8cff,color:#000000
-    style CAcert fill:#d9f2d9,stroke:#5cd65c, color:#000000
-    style HostsFile fill:#f2e6ff,stroke:#bf80ff, color:#000000
+    style CAcert fill:#d9f2d9,stroke:#5cd65c,color:#000000
+    style HostsFile fill:#f2e6ff,stroke:#bf80ff,color:#000000
 
 ```
 
