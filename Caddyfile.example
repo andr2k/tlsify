@@ -2,11 +2,19 @@
     acme_ca https://local.caddy.internal/acme/local/directory
 }
 
+(tls) {
+    tls {
+        issuer internal {
+            lifetime 5d
+        }
+    }
+}
+
 http:// {
     redir https://{host}{uri}
 }
 
 site.dev.local {
-    tls internal
+    import tls
     reverse_proxy host.docker.internal:81
 }
